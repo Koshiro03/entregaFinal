@@ -1,6 +1,6 @@
 
 
-<div style="text-align: left; margin-left: 160px; margin-top: 60px;">
+<div style="text-align: left; margin-left: 260px; margin-top: 60px;">
     <h1 class="rosaLight" style="font-size: 30pt;">
         Estás a un paso de ser
     </h1>
@@ -9,24 +9,24 @@
     </h1>
 </div>
 
-<div class="container text-center m-5">
+<div class="container text-center m-5" >
     <main class="form-signin w-75 m-auto">
         <form method="post" action="/api/create">
-            <img class="mb-4" src="https://getbootstrap.com/docs/5.2/assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">
+            <img class="mb-4" src="https://i.postimg.cc/j2yrfGcR/favicon.png" alt="" width="74px" height="90px">
             <h1 class="h3 mb-3 fw-normal">Completá tus datos</h1>
             <div class="form-floating">
             <input type="text" class="form-control m-3" id="nombre" name="nombre" placeholder="Nombre">
             <label for="floatingInput">Nombre</label>
             </div>
             <div class="form-floating">
-            <input type="email" class="form-control m-3" id="email" name="email" placeholder="name@example.com">
-            <label for="floatingInput">Email address</label>
+            <input type="email" class="form-control m-3" id="email" name="email" placeholder="nombre@ejemplo.com">
+            <label for="floatingInput">E-mail</label>
             </div>
             <div class="form-floating">
             <input type="password" class="form-control m-3" id="password"  name="password" placeholder="Password">
             <label for="floatingPassword">Password</label>
             </div>
-            <button class="w-75 btn btn-lg btn-success" type="submit">Registrarse</button>
+            <button class="btn btn-outline-dark btn-lg" type="submit">Registrarse</button>
         </form>
         <h1 class="text-danger m-5">
             {{ validacion }}
