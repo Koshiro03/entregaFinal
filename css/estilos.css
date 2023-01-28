@@ -1,0 +1,322 @@
+*{
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Gilroy";
+    font-display: auto;
+    font-fallback: Sans Serif;
+    font-weight: 400;
+    src: url(/fonts/Gilroy-Medium.ttf)
+            format("ttf"),
+}
+
+@font-face {
+    font-family: "Gilroy";
+    font-display: auto;
+    font-fallback: Sans Serif;
+    font-weight: 600;
+    src: url(/fonts/Gilroy-Bold.ttf)
+            format("ttf"),
+}
+
+@font-face {
+    font-family: "Gilroy";
+    font-display: auto;
+    font-fallback: Sans Serif;
+    font-weight: 900;
+    src: url(/fonts/Gilroy-Black.ttf)
+            format("ttf"),
+}
+
+@font-face {
+    font-family: "Gilroy";
+    font-display: auto;
+    font-fallback: Sans Serif;
+    font-weight: 200;
+    src: url(/fonts/Gilroy-Light.ttf)
+            format("ttf"),
+}
+
+.main-padding{
+    padding-left: 40px;
+    padding-right: 40px;
+}
+body{
+    margin: 0;
+    font-family:'Gilroy', sans-serif;
+}
+hr{
+    width: 80px;
+}
+
+/* Header */
+
+.header__content{
+    width: 100%;
+    height: 700px;
+    background-image: url(/img/homeSlider.png);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-content: flex-start;
+    align-items: flex-start;
+    padding-left: 10%;
+}
+.header__content .texto{
+    text-align: left;
+}
+.header__content .texto span:first-child{
+    font-size: 25pt;
+    font-weight: 400; 
+}
+
+.header__content .texto span:nth-child(3){
+    font-size: 35pt;
+    font-weight: 600; 
+}
+.header__content .texto span:last-child{
+    font-size: 15pt;
+    font-weight: 400; 
+    display: block;
+    width: 50%;
+}
+.botonesRegistro{
+    text-align: center;
+}
+.inicioSesion{
+    font-size: 15pt;
+    font-weight: 200;
+    letter-spacing: 2px; 
+}
+
+.header__content span{
+    font-size: 26px;
+}
+.header__content h3{
+    letter-spacing: 2px;
+    font-size: 40px;
+    font-weight: 600;
+    width: 50%;
+    text-align: left;
+}
+.header__content .boton{
+    cursor: pointer;
+    width: 245px;
+    height: 50px;
+    border: 1px solid white;
+    padding: 5%;
+    border-radius: 3px;
+}
+.header__content .boton:hover{
+    background-color: white;
+}
+.header__content .boton:hover a{
+    color: black;
+}
+
+.header__content .boton a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+
+/* Bienvenido */
+section{
+    padding: 85px 0;
+    text-align: center;
+}
+.welcome{
+    width: 70%;
+    margin: auto;
+    text-align: center;
+}
+.welcome h1{
+    font-size: 40px;
+    color: #47475b;
+}
+section .welcome p{
+    font-size: 30px;
+    line-height: 1.4;
+    color: #90909b;
+}
+section .welcome i{
+    font-size: 30px;
+}
+
+
+/* Categorias */
+.categorias{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: stretch;
+}
+.categorias .caja{
+    margin: 8px;
+}
+
+.tituloCategorias{
+    width: 70%;
+    margin: auto;
+    text-align: center;
+}
+.tituloCategorias h1{
+    font-size: 30px;
+    color: #47475b;
+}
+
+
+
+/* Curso lechuga */
+.lechuga{
+    display: flex;
+    /* flex-wrap: wrap; */
+    padding-top: 85px;
+    padding-bottom: 85px;
+}
+.lechuga .caja{
+    width: 50%;
+}
+.caja.textoLechuga{
+    padding-right: 20px;
+    padding-left: 20px;
+    background: #ebebeb;
+}
+.caja p{
+    font-size: 16pt;
+}
+
+.imagenLechuga{
+    text-align: center;
+}
+#btn-negro{
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    font-size: 12pt;
+    border-radius: 3px;
+    width: 200px;
+    height: 50px;
+}
+#btn-negro:hover{
+    background-color: white;
+    color: black;
+}
+
+
+/* Iconos */
+.ico{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+.ico .caja{
+    margin: 24px;
+    width: 20%;
+}
+
+/* Footer */
+footer{
+    /* height: 120px; */
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 20px 0;
+}
+footer div{
+    width: 33%;
+    text-align: center;
+}
+footer p{
+    color: white;
+    cursor: pointer;
+}
+footer .boton{
+    cursor: pointer;
+    width: 245px;
+    height: 50px;
+    border: 1px solid white;
+    padding: 1%;
+    text-align: center;
+    border-radius: 3px;
+}
+footer .boton:hover{
+    background-color: white;
+}
+footer .boton:hover a{
+    color: black;
+}
+
+footer .boton a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+
+
+
+/* Media queries */
+/* Ordenador grande */
+@media ( min-width: 1440px ) and ( max-width: 2560px){
+    .main-padding{
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+}
+
+/* móvil */
+@media screen and ( max-width: 768px ){
+    .header__content{
+        justify-content: space-between;
+    }
+    .lechuga{
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+    }
+    .lechuga .caja{
+        width: 100%;
+    }
+    .header__content{
+        height: 900px;
+        padding: 40px;
+    }
+    section .welcome p{
+        font-size: 20px;
+    }
+    section .welcome i{
+        font-size: 20px;
+    }
+    
+}
+
+
+
+/* tablet */
+@media ( min-width: 768px ) and ( max-width: 992px){
+    .lechuga{
+        flex-direction: column-reverse;
+        flex-wrap: wrap;
+    }
+    .lechuga .caja{
+        width: 100%;
+    }
+}

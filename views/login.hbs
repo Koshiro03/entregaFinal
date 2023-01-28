@@ -1,0 +1,22 @@
+
+
+<div class="container text-center m-5">
+    <main class="form-signin w-75 m-auto">
+        <form method="post" action="/api/login">
+            <img class="mb-4" src="https://getbootstrap.com/docs/5.2/assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">
+            <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
+            <div class="form-floating">
+            <input type="email" class="form-control m-3" id="email" name="email" placeholder="name@example.com">
+            <label for="floatingInput">Email address</label>
+            </div>
+            <div class="form-floating">
+            <input type="password" class="form-control m-3" id="password"  name="password" placeholder="Password">
+            <label for="floatingPassword">Password</label>
+            </div>
+            <button class="w-75 btn btn-lg btn-primary" type="submit">Sign in</button>
+        </form>
+        <h1 class="text-danger m-5">
+            {{ validacion }}
+        </h1>
+    </main>
+</div>
